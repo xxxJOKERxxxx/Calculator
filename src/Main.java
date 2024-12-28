@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Выводим меню операций, которые может выполнить калькулятор.
-        System.out.println("Простой калькулятор!");
+        System.out.println("Новый калькулятор!");
         System.out.println("Выберите операцию:");
         System.out.println("1 - Сложение");
         System.out.println("2 - Вычитание");
