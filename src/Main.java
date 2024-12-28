@@ -14,6 +14,7 @@ public class Main {
         System.out.println("2 - Вычитание");
         System.out.println("3 - Умножение");
         System.out.println("4 - Деление");
+        System.out.println("5 - Возведение в степень");
 
         // Считываем выбор пользователя (целое число).
         int operation = scanner.nextInt();
@@ -50,6 +51,11 @@ public class Main {
                 // Выводим ошибку, если пользователь пытается делить на ноль.
                 System.out.println("Ошибка: Деление на ноль невозможно.");
             }
+        } else if (operation == 5) {
+            // Если выбрано возведение в степень, вычисляем num1 в степени num2.
+            result = Math.pow(num1, num2);
+            System.out.println("Результат: " + result);
+            return; // Завершаем выполнение программы, чтобы не попасть в блок "else"
         } else {
             // Если введена некорректная операция, выводим сообщение об ошибке.
             System.out.println("Ошибка: Неверный выбор операции.");
@@ -57,5 +63,7 @@ public class Main {
 
         // Закрываем объект Scanner для освобождения ресурсов.
         scanner.close();
+
     }
+
 }
